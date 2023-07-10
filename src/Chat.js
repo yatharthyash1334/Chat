@@ -82,8 +82,8 @@ function Chat() {
       </div>
 
       <div className='chat__body'>
-        {messages.map((message, index) => (
-          <p key={index} className={`chat__message ${ message.name === user.displayName && 'chat__reciever'}`}>
+        {messages.map((message) => (
+          <p className={`chat__message ${ message.name === user.displayName && 'chat__reciever'}`}>
             <span className='chat__name'>
               {message.name}
             </span>
